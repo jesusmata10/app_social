@@ -13,50 +13,7 @@
         </div>
       </div>
       <div class="col-6">
-        <div class="row justify-content-sm-center">
-          <div
-            class="card mt-5"
-            style="width: 18rem;"
-          >
-            <div class="card-body">
-              <form class="row g-3">
-                <div class="col-auto">
-                  <label
-                    for="staticEmail2"
-                    class="visually-hidden"
-                  >Email</label>
-                  <input
-                    id="staticEmail2"
-                    type="text"
-                    readonly
-                    class="form-control-plaintext"
-                    value="email@example.com"
-                  >
-                </div>
-                <div class="col-auto">
-                  <label
-                    for="inputPassword2"
-                    class="visually-hidden"
-                  >Password</label>
-                  <input
-                    id="inputPassword2"
-                    type="password"
-                    class="form-control"
-                    placeholder="Password"
-                  >
-                </div>
-                <div class="col-auto">
-                  <button
-                    type="submit"
-                    class="btn btn-primary mb-3"
-                  >
-                    Confirm identity
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+        <CardComponents title="Login" />
       </div>
     </div>
   </div>
@@ -64,10 +21,10 @@
 
 <script>
 // @ is an alias to /src
-
+import CardComponents from '@/components/CardComponent.vue'
 export default {
   name: 'HomeView',
-  components: {
-  }
+  components: { CardComponents },
+  props: ['title']
 }
 </script>

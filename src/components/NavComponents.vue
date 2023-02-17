@@ -24,6 +24,15 @@
       </router-link>
 
       <router-link
+        to="/prueba"
+        class="nav-link"
+      >
+        <span class="material-icons-outlined">
+          info
+        </span>
+      </router-link>
+
+      <router-link
         to="/about"
         class="nav-link"
       >
